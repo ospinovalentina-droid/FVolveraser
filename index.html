@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fundación Volver a Ser | Bienestar emocional comunitario</title>
+    <meta name="description" content="Fundación Volver a Ser: bienestar emocional, herramientas de autocuidado y orientación sobre rutas de apoyo en salud mental en Barranquilla y el Atlántico.">
+    <link rel="icon" href="img/logo-mariposa.png" type="image/png">
+
+    <!-- Tipografías: Outfit para los textos y Caveat para los detalles escritos a mano -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ===================== 1. ENCABEZADO Y MENÚ DE NAVEGACIÓN ===================== -->
+    <header class="encabezado">
+        <div class="encabezado-contenido">
+
+            <!-- LOGO DE LA FUNDACIÓN -->
+            <a href="#inicio" class="logo" aria-label="Fundación Volver a Ser, ir al inicio">
+                <img src="img/logo-mariposa.png" alt="" width="52" height="50">
+                <span class="logo-texto">
+                    <small>Fundación</small>
+                    <strong>Volver a <em>Ser</em></strong>
+                </span>
+            </a>
+            <p class="logo-lema">Un espacio para<br>reconocerte y comenzar</p>
+
+            <!-- MENÚ DE NAVEGACIÓN -->
+            <nav class="menu" aria-label="Menú principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#destacados">Destacados</a>
+                <a href="#calculadora">Calculadora</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <a href="#calculadora" class="boton boton-apoyar">Quiero apoyar</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===================== 2. PORTADA PRINCIPAL ===================== -->
+        <section id="inicio" class="portada">
+            <img class="portada-foto" src="img/portada.jpg" alt="Mujer respirando con calma al atardecer frente al río, en Barranquilla" width="1881" height="836">
+
+            <div class="portada-texto">
+                <h1>
+                    <span class="portada-fundacion">Fundación</span>
+                    Volver a <span class="manuscrita">Ser</span>
+                </h1>
+                <p class="portada-lema">Un espacio para reconocerte y comenzar</p>
+                <p class="portada-descripcion">
+                    Promovemos el bienestar emocional, compartimos herramientas de autocuidado
+                    y te acercamos a rutas de apoyo en salud mental en Barranquilla y el Atlántico.
+                </p>
+                <div class="portada-botones">
+                    <a href="#servicios" class="boton boton-principal">Conoce nuestros servicios</a>
+                    <a href="#video" class="boton boton-contorno">
+                        <span class="icono-play" aria-hidden="true"></span>
+                        Ver video institucional
+                    </a>
+                </div>
+            </div>
+
+            <ul class="portada-pilares" aria-label="Lo que nos mueve">
+                <li><span class="punto punto-ciruela"></span>Escucha</li>
+                <li><span class="punto punto-coral"></span>Acompañamiento</li>
+                <li><span class="punto punto-agua"></span>Bienestar</li>
+                <li><span class="punto punto-lavanda"></span>Comunidad</li>
+            </ul>
+        </section>
+
+        <!-- VENTANA DEL VIDEO INSTITUCIONAL (se abre con el enlace #video, sin JavaScript) -->
+        <div id="video" class="ventana" role="dialog" aria-label="Video institucional">
+            <a href="#inicio" class="ventana-fondo" aria-label="Cerrar video"></a>
+            <div class="ventana-contenido ventana-video">
+                <a href="#inicio" class="ventana-cerrar" aria-label="Cerrar video">×</a>
+                <video controls preload="none" poster="img/video-portada.jpg">
+                    <source src="img/video-institucional.mp4" type="video/mp4">
+                    Tu navegador no puede reproducir este video.
+                </video>
+                <p>Conoce en 20 segundos quiénes somos y cómo puedes sumarte.</p>
+            </div>
+        </div>
+
+        <!-- ===================== 3. SOBRE NOSOTROS ===================== -->
+        <section id="nosotros" class="sobre-nosotros">
+            <div class="nosotros-imagen">
+                <img class="nosotros-foto" src="img/comunidad-atardecer.jpg" alt="Grupo de amigos abrazados mirando el atardecer" width="708" height="442">
+                <img class="nosotros-detalle" src="img/manos-unidas.jpg" alt="Manos unidas en señal de comunidad" width="333" height="330">
+            </div>
+
+            <div class="nosotros-contenido">
+                <h2>Sobre nosotros</h2>
+                <p>
+                    Somos una iniciativa social que nace en Barranquilla para construir una comunidad
+                    más consciente, empática y libre de estigmas, donde hablar de salud mental sea
+                    cercano, seguro y respetuoso.
+                </p>
+                <p>
+                    Reunimos en un solo lugar información confiable, actividades educativas y
+                    orientación hacia redes de apoyo. Trabajamos de la mano de aliados y profesionales
+                    habilitados: no diagnosticamos ni reemplazamos la atención psicológica,
+                    psiquiátrica o de urgencias.
+                </p>
+
+                <ul class="valores">
+                    <li>
+                        <img src="img/valor-empatia.jpg" alt="" width="270" height="194">
+                        <h3>Empatía</h3>
+                        <p>Escucha y respeto por cada historia.</p>
+                    </li>
+                    <li>
+                        <img src="img/valor-prevencion.jpg" alt="" width="210" height="194">
+                        <h3>Prevención</h3>
+                        <p>Herramientas para cuidar la salud mental a diario.</p>
+                    </li>
+                    <li>
+                        <img src="img/valor-comunidad.jpg" alt="" width="236" height="194">
+                        <h3>Comunidad</h3>
+                        <p>Redes de apoyo que nos fortalecen.</p>
+                    </li>
+                </ul>
+
+                <a href="#servicios" class="boton boton-contorno">Conoce lo que hacemos</a>
+            </div>
+        </section>
+
+        <!-- METAS DE LA FUNDACIÓN -->
+        <section class="metas" aria-label="Nuestras metas para 2027">
+            <div class="metas-texto">
+                <p class="metas-frase">Hablemos de salud mental</p>
+                <p class="metas-subfrase">Romper el silencio también es una forma de cuidarnos.</p>
+            </div>
+            <ul class="metas-lista">
+                <li><strong>100</strong><span>personas acompañadas en actividades</span></li>
+                <li><strong>10</strong><span>talleres y encuentros psicoeducativos</span></li>
+                <li><strong>5</strong><span>aliados por el bienestar emocional</span></li>
+            </ul>
+            <p class="metas-nota">Nuestras metas para 2027</p>
+        </section>
+
+        <!-- ===================== 4. CATÁLOGO DE SERVICIOS ===================== -->
+        <section id="servicios" class="servicios">
+            <div class="seccion-encabezado">
+                <h2>Nuestros servicios</h2>
+                <p>Espacios seguros, educativos y cercanos para cuidar tu salud mental.</p>
+            </div>
+
+            <div class="contenedor-servicios">
+
+                <!-- SERVICIO 1 -->
+                <article class="tarjeta-servicio tarjeta-agua">
+                    <img src="img/servicio-biblioteca.jpg" alt="Libros apilados con un corazón de luz" width="392" height="304">
+                    <div class="tarjeta-cuerpo">
+                        <h3>Biblioteca digital</h3>
+                        <p>Guías breves sobre autocuidado, manejo del estrés en el día a día, hábitos saludables y señales para buscar ayuda profesional.</p>
+                        <p class="precio">Gratuito</p>
+                        <a href="#biblioteca" class="boton boton-tarjeta">Ver recursos</a>
+                    </div>
+                </article>
+
+                <!-- SERVICIO 2 -->
+                <article class="tarjeta-servicio tarjeta-durazno">
+                    <img src="img/servicio-talleres.jpg" alt="Grupo de mujeres conversando en un taller" width="396" height="300">
+                    <div class="tarjeta-cuerpo">
+                        <h3>Talleres comunitarios</h3>
+                        <p>Encuentros psicoeducativos sobre bienestar emocional, comunicación, redes de apoyo y habilidades para la vida, con aliados idóneos.</p>
+                        <p class="precio">Gratuito o subsidiado</p>
+                        <a href="#talleres" class="boton boton-tarjeta">Ver próximos talleres</a>
+                    </div>
+                </article>
+
+                <!-- SERVICIO 3 -->
+                <article class="tarjeta-servicio tarjeta-lavanda">
+                    <img src="img/servicio-rutas.jpg" alt="Señal de madera con un corazón que indica el camino" width="368" height="300">
+                    <div class="tarjeta-cuerpo">
+                        <h3>Orientación sobre rutas de apoyo</h3>
+                        <p>Te ayudamos a identificar servicios, canales institucionales y profesionales disponibles para buscar la atención adecuada.</p>
+                        <p class="precio">Gratuito</p>
+                        <a href="#rutas" class="boton boton-tarjeta">Conocer las rutas</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- FRASE INSPIRADORA -->
+            <figure class="frase">
+                <img src="img/corazon-manos.jpg" alt="Manos sosteniendo un corazón morado" width="556" height="442">
+                <blockquote>
+                    <p>Cuidar tu salud mental también es una forma de volver a ti.</p>
+                </blockquote>
+            </figure>
+        </section>
+
+        <!-- ===== VENTANAS DE CADA SERVICIO (se abren con #biblioteca, #talleres y #rutas) ===== -->
+
+        <!-- BIBLIOTECA DIGITAL -->
+        <div id="biblioteca" class="ventana" role="dialog" aria-labelledby="titulo-biblioteca">
+            <a href="#servicios" class="ventana-fondo" aria-label="Cerrar"></a>
+            <div class="ventana-contenido ventana-panel">
+                <a href="#servicios" class="ventana-cerrar" aria-label="Cerrar">×</a>
+                <img class="panel-foto" src="img/biblioteca-libros.jpg" alt="Libros junto a una planta" width="786" height="288">
+                <div class="panel-cuerpo">
+                    <h2 id="titulo-biblioteca">Biblioteca digital</h2>
+                    <p class="panel-intro">Guías breves para cuidarte en el día a día. Toca cada una para leerla.</p>
+
+                    <details class="guia">
+                        <summary>Respira para bajar la tensión</summary>
+                        <p>Siéntate cómodo, inhala por la nariz contando hasta cuatro y exhala lentamente contando hasta seis. Repite durante cinco minutos. Exhalar más largo de lo que inhalas ayuda al cuerpo a relajarse.</p>
+                    </details>
+                    <details class="guia">
+                        <summary>Duerme mejor</summary>
+                        <p>Acuéstate y levántate a la misma hora, aleja las pantallas una hora antes de dormir y evita el café en la tarde. Un descanso regular mejora el ánimo y la concentración.</p>
+                    </details>
+                    <details class="guia">
+                        <summary>Pausas activas en tu jornada</summary>
+                        <p>Cada dos horas, levántate, estira cuello y hombros y toma agua. Dos minutos de pausa reducen la tensión acumulada del estudio o el trabajo.</p>
+                    </details>
+                    <details class="guia">
+                        <summary>¿Cuándo buscar ayuda profesional?</summary>
+                        <p>Si el malestar dura más de dos semanas, afecta tu sueño, tu alimentación, tus estudios o tu trabajo, o si tienes pensamientos de hacerte daño, busca ayuda profesional. En una emergencia llama al 123.</p>
+                    </details>
+
+                    <a href="https://wa.me/573002765220?text=Hola%2C%20quiero%20recibir%20las%20gu%C3%ADas%20completas%20de%20la%20biblioteca%20digital." class="boton boton-principal" target="_blank" rel="noopener">Recibir las guías completas</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRÓXIMOS TALLERES -->
+        <div id="talleres" class="ventana" role="dialog" aria-labelledby="titulo-talleres">
+            <a href="#servicios" class="ventana-fondo" aria-label="Cerrar"></a>
+            <div class="ventana-contenido ventana-panel">
+                <a href="#servicios" class="ventana-cerrar" aria-label="Cerrar">×</a>
+                <img class="panel-foto" src="img/taller-grupo.jpg" alt="Facilitadora conversando con un grupo en un taller" width="716" height="288">
+                <div class="panel-cuerpo">
+                    <h2 id="titulo-talleres">Próximos talleres</h2>
+                    <p class="panel-intro">Encuentros presenciales en Barranquilla. Los cupos son limitados.</p>
+
+                    <ul class="lista-talleres">
+                        <li>
+                            <div class="taller-fecha"><strong>12</strong><span>dic</span></div>
+                            <div class="taller-info">
+                                <h3>Gestiona tu estrés en la vida diaria</h3>
+                                <p>Sábado, 9:00 a. m. a 11:00 a. m. · Gratuito</p>
+                            </div>
+                            <a href="https://wa.me/573002765220?text=Hola%2C%20quiero%20inscribirme%20al%20taller%20Gestiona%20tu%20estr%C3%A9s%20en%20la%20vida%20diaria%20(12%20de%20diciembre)." class="boton boton-tarjeta" target="_blank" rel="noopener">Inscribirme</a>
+                        </li>
+                        <li>
+                            <div class="taller-fecha"><strong>19</strong><span>dic</span></div>
+                            <div class="taller-info">
+                                <h3>Comunicación en familia</h3>
+                                <p>Sábado, 9:00 a. m. a 11:00 a. m. · Subsidiado, con aporte voluntario</p>
+                            </div>
+                            <a href="https://wa.me/573002765220?text=Hola%2C%20quiero%20inscribirme%20al%20taller%20Comunicaci%C3%B3n%20en%20familia%20(19%20de%20diciembre)." class="boton boton-tarjeta" target="_blank" rel="noopener">Inscribirme</a>
+                        </li>
+                        <li>
+                            <div class="taller-fecha"><strong>16</strong><span>ene</span></div>
+                            <div class="taller-info">
+                                <h3>Círculo de apoyo para cuidadores</h3>
+                                <p>Sábado, 3:00 p. m. a 5:00 p. m. · Gratuito</p>
+                            </div>
+                            <a href="https://wa.me/573002765220?text=Hola%2C%20quiero%20inscribirme%20al%20C%C3%ADrculo%20de%20apoyo%20para%20cuidadores%20(16%20de%20enero)." class="boton boton-tarjeta" target="_blank" rel="noopener">Inscribirme</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- RUTAS DE APOYO -->
+        <div id="rutas" class="ventana" role="dialog" aria-labelledby="titulo-rutas">
+            <a href="#servicios" class="ventana-fondo" aria-label="Cerrar"></a>
+            <div class="ventana-contenido ventana-panel">
+                <a href="#servicios" class="ventana-cerrar" aria-label="Cerrar">×</a>
+                <img class="panel-foto" src="img/rutas-senales.jpg" alt="Señales de orientación, apoyo, servicios y acompañamiento" width="634" height="288">
+                <div class="panel-cuerpo">
+                    <h2 id="titulo-rutas">Rutas de apoyo</h2>
+                    <p class="panel-intro">Así puedes buscar ayuda según tu situación.</p>
+
+                    <ol class="lista-rutas">
+                        <li><strong>Si es una emergencia:</strong> llama al 123 o acude al servicio de urgencias más cercano.</li>
+                        <li><strong>A través de tu EPS:</strong> pide una cita de medicina general; desde allí te pueden remitir a psicología o psiquiatría.</li>
+                        <li><strong>En tu colegio o universidad:</strong> busca el servicio de orientación escolar o de bienestar universitario.</li>
+                        <li><strong>Con la fundación:</strong> escríbenos y te ayudamos a identificar el servicio adecuado para ti.</li>
+                    </ol>
+
+                    <a href="https://wa.me/573002765220?text=Hola%2C%20necesito%20orientaci%C3%B3n%20sobre%20rutas%20de%20apoyo." class="boton boton-principal" target="_blank" rel="noopener">Solicitar orientación</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== 5. DESTACADOS ===================== -->
+        <section id="destacados" class="destacados">
+
+            <article class="destacado-principal">
+                <div class="destacado-texto">
+                    <span class="etiqueta">Destacado del mes</span>
+                    <h2>Gestiona tu estrés en la vida diaria</h2>
+                    <p>Herramientas prácticas para reconocer tus emociones, bajar la tensión del día y fortalecer tu bienestar.</p>
+                    <ul class="destacado-datos">
+                        <li><strong>Cuándo:</strong> sábado 12 de diciembre de 2026</li>
+                        <li><strong>Hora:</strong> 9:00 a. m. a 11:00 a. m.</li>
+                        <li><strong>Dónde:</strong> Barranquilla, Atlántico</li>
+                        <li><strong>Valor:</strong> gratuito, con aporte voluntario</li>
+                    </ul>
+                    <div class="destacado-botones">
+                        <a href="https://wa.me/573002765220?text=Hola%2C%20quiero%20inscribirme%20al%20taller%20Gestiona%20tu%20estr%C3%A9s%20en%20la%20vida%20diaria%20(12%20de%20diciembre)." class="boton boton-claro" target="_blank" rel="noopener">Quiero inscribirme</a>
+                        <a href="#talleres" class="boton boton-contorno-claro">Ver todos los talleres</a>
+                    </div>
+                </div>
+                <img src="img/taller-estres.jpg" alt="Joven con audífonos que se toma un momento para respirar" width="436" height="454">
+            </article>
+
+            <!-- PAUSA DE UN MINUTO: ejercicio de respiración interactivo (solo CSS) -->
+            <article class="pausa">
+                <h2>Tómate una pausa</h2>
+                <p>Sigue el círculo durante un minuto: inhala mientras crece, exhala mientras se encoge.</p>
+
+                <input type="checkbox" id="respirar" class="pausa-control">
+                <div class="pausa-circulo" aria-hidden="true">
+                    <span class="pausa-inhala">Inhala</span>
+                    <span class="pausa-exhala">Exhala</span>
+                </div>
+                <label for="respirar" class="boton boton-principal pausa-boton">
+                    <span class="pausa-iniciar">Comenzar a respirar</span>
+                    <span class="pausa-detener">Detener</span>
+                </label>
+            </article>
+
+        </section>
+
+        <!-- ===================== 6. CALCULADORA ===================== -->
+        <section id="calculadora" class="seccion-calculadora">
+
+            <div class="calculadora-encabezado">
+                <h2>Calculadora de aporte voluntario</h2>
+                <p>Elige una actividad y descubre cuánto se cubre con los aportes de los participantes y de los aliados.</p>
+            </div>
+
+            <div class="calculadora-contenedor">
+
+                <!-- FORMULARIO: envía los datos a la función de Python en /api/calculadora -->
+                <form class="calculadora-formulario" action="/api/calculadora" method="POST">
+
+                    <h3>Datos de la actividad</h3>
+
+                    <label for="actividad">Tipo de actividad</label>
+                    <select id="actividad" name="actividad" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="taller">Taller comunitario de bienestar emocional ($ 500.000)</option>
+                        <option value="jornada">Jornada de bienestar en colegio ($ 850.000)</option>
+                        <option value="circulo">Círculo de apoyo para cuidadores ($ 300.000)</option>
+                        <option value="biblioteca">Kit impreso de la biblioteca digital ($ 200.000)</option>
+                    </select>
+
+                    <label for="participantes">Número de participantes</label>
+                    <input type="number" id="participantes" name="participantes" min="1" max="500" step="1" placeholder="Ej.: 12" required>
+
+                    <label for="aporte">Aporte voluntario por persona (COP)</label>
+                    <input type="number" id="aporte" name="aporte" min="0" step="1000" placeholder="Ej.: 25000" required>
+
+                    <label for="donacion">Donación de aliados (COP, escribe 0 si no hay)</label>
+                    <input type="number" id="donacion" name="donacion" min="0" step="1000" value="0" required>
+
+                    <button type="submit" class="boton boton-principal boton-calcular">Calcular aporte</button>
+                </form>
+
+                <!-- ESPACIO DEL RESULTADO -->
+                <div class="resultado-calculadora">
+                    <img src="img/corazon-manos.jpg" alt="" width="556" height="442" class="resultado-imagen">
+                    <h3>Resumen del aporte</h3>
+                    <p>Actividad seleccionada:</p>
+                    <strong>Esperando información…</strong>
+                    <hr>
+                    <p>Aporte total estimado:</p>
+                    <span class="valor-total">$ 0</span>
+                    <p class="mensaje-calculadora">
+                        Aquí verás cuánto cubren los aportes y si hace falta apoyo adicional.
+                        Cualquier excedente se destina a nuevas actividades de la fundación.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================== PREGUNTAS FRECUENTES ===================== -->
+        <section class="preguntas" aria-labelledby="titulo-preguntas">
+            <h2 id="titulo-preguntas">Preguntas frecuentes</h2>
+
+            <details>
+                <summary>¿Tengo que pagar para participar?</summary>
+                <p>No. La biblioteca digital y la orientación son gratuitas, y los talleres son gratuitos o subsidiados. El aporte es voluntario y ayuda a que más personas puedan participar.</p>
+            </details>
+            <details>
+                <summary>¿La fundación ofrece terapia o diagnóstico?</summary>
+                <p>No. Somos una puerta de entrada informativa y comunitaria. Te orientamos hacia profesionales y servicios habilitados cuando lo necesites.</p>
+            </details>
+            <details>
+                <summary>¿Cómo puede mi empresa o colegio ser aliado?</summary>
+                <p>Escríbenos por WhatsApp o correo. Podemos organizar jornadas de bienestar para tu comunidad y usar la calculadora para estimar el presupuesto.</p>
+            </details>
+            <details>
+                <summary>¿Qué hago si estoy en una situación urgente?</summary>
+                <p>Llama a la línea de emergencias 123 o acude al servicio de urgencias más cercano. Pedir ayuda es un acto de valentía.</p>
+            </details>
+        </section>
+
+        <!-- ===================== 7. CONTACTO ===================== -->
+        <section id="contacto" class="seccion-contacto">
+
+            <div class="contacto-encabezado">
+                <h2>Hablemos</h2>
+                <p>¿Tienes una pregunta, quieres participar o ser aliado? Escríbenos.</p>
+            </div>
+
+            <div class="contacto-contenedor">
+
+                <!-- INFORMACIÓN DE CONTACTO -->
+                <div class="contacto-informacion">
+                    <a class="dato-contacto" href="https://wa.me/573002765220" target="_blank" rel="noopener">
+                        <span class="dato-icono icono-whatsapp" aria-hidden="true"></span>
+                        <span><small>WhatsApp</small>300 276 5220</span>
+                    </a>
+                    <a class="dato-contacto" href="mailto:contacto@fundacionvolveraser.org">
+                        <span class="dato-icono icono-correo" aria-hidden="true"></span>
+                        <span><small>Correo electrónico</small>contacto@fundacionvolveraser.org</span>
+                    </a>
+                    <div class="dato-contacto">
+                        <span class="dato-icono icono-ubicacion" aria-hidden="true"></span>
+                        <span><small>Ubicación</small>Barranquilla, Atlántico, Colombia</span>
+                    </div>
+                    <div class="dato-contacto">
+                        <span class="dato-icono icono-horario" aria-hidden="true"></span>
+                        <span><small>Horario de atención</small>Lunes a sábado, 8:00 a. m. a 6:00 p. m.</span>
+                    </div>
+
+                    <div class="redes">
+                        <a href="https://www.instagram.com/fundacionvolveraser" target="_blank" rel="noopener">Instagram</a>
+                        <a href="https://www.facebook.com/fundacionvolveraser" target="_blank" rel="noopener">Facebook</a>
+                        <a href="https://www.youtube.com/@fundacionvolveraser" target="_blank" rel="noopener">YouTube</a>
+                    </div>
+                </div>
+
+                <!-- FORMULARIO DE CONTACTO: abre WhatsApp con el mensaje escrito -->
+                <div class="contacto-formulario">
+                    <img class="contacto-foto" src="img/mariposa-lavanda.jpg" alt="Mariposa posada sobre flores de lavanda" width="732" height="288">
+                    <h3>Envíanos un mensaje</h3>
+                    <form action="https://wa.me/573002765220" method="GET" target="_blank">
+                        <label for="mensaje">Tu mensaje</label>
+                        <textarea id="mensaje" name="text" rows="5" placeholder="Hola, soy … y quiero saber más sobre …" required></textarea>
+                        <button type="submit" class="boton boton-principal">Enviar por WhatsApp</button>
+                    </form>
+                    <p class="contacto-nota">Se abrirá WhatsApp con tu mensaje listo para enviar.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FRANJA DE COMPROMISOS -->
+        <ul class="compromisos" aria-label="Nuestros compromisos">
+            <li>Prevención y bienestar</li>
+            <li>Enfoque comunitario</li>
+            <li>Acceso para todos</li>
+            <li>Alianzas con impacto</li>
+        </ul>
+
+        <!-- AVISO DE CUIDADO -->
+        <aside class="aviso-cuidado">
+            <p>
+                <strong>Aviso de cuidado:</strong> la información de este sitio es educativa y no reemplaza
+                el diagnóstico ni la atención profesional. En una emergencia llama al 123 o acude al
+                servicio de urgencias más cercano.
+            </p>
+        </aside>
+
+    </main>
+
+    <!-- ===================== 8. PIE DE PÁGINA ===================== -->
+    <footer class="pie-pagina">
+        <div class="pie-contenido">
+            <div class="pie-marca">
+                <img src="img/logo-fundacion.jpg" alt="Fundación Volver a Ser" width="344" height="226">
+                <p>Reconocer tu historia, recuperar tu esencia y construir nuevos comienzos.</p>
+            </div>
+            <nav class="pie-enlaces" aria-label="Enlaces del pie de página">
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#calculadora">Calculadora</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="pie-redes">
+                <a href="https://wa.me/573002765220" target="_blank" rel="noopener">WhatsApp 300 276 5220</a>
+                <a href="https://www.instagram.com/fundacionvolveraser" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.facebook.com/fundacionvolveraser" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://www.youtube.com/@fundacionvolveraser" target="_blank" rel="noopener">YouTube</a>
+            </div>
+        </div>
+        <p class="pie-aviso-ia">
+            Esta página web fue elaborada con apoyo de herramientas de inteligencia artificial
+            y posteriormente revisada por la autora.
+        </p>
+        <p class="pie-derechos">© 2026 Fundación Volver a Ser. Proyecto académico de Valentina Ospino Bermejo. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
